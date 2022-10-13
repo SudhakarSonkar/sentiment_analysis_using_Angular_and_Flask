@@ -1,0 +1,13 @@
+.head{
+    background-color: rgb(107, 78, 214);
+    height: 66px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+p{
+    padding-top: 17px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+}

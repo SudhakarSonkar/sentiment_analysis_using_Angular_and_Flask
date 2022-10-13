@@ -1,0 +1,29 @@
+<form enctype="multipart/form-data">
+    <textarea class="link" type="text" [(ngModel)]="link" name="link" id="" placeholder="Enter the link of product from Amazon"></textarea><br>
+    <button class="button submit" (click)="getResult()">Submit</button>
+</form>
+
+<br>
+
+<ng-container *ngIf="visible">
+    <div>
+        <table class="table table-striped">
+            <tr scope="row">
+                <th>Number of Input Submitted: </th>
+                <td>{{output.total_review}}</td>
+            </tr>
+            <tr>
+                <th>Number of Negative Reviews: </th>
+                <td>{{output.negative_review}}</td>
+            </tr>
+            <tr>
+                <th>Number of Neutral Reviews: </th>
+                <td>{{output.neutral_review}}</td>
+            </tr>
+            <tr>
+                <th>Number of Positive Reviews: </th>
+                <td>{{output.positive_review}}</td>
+            </tr>
+        </table>
+    </div>
+</ng-container>
